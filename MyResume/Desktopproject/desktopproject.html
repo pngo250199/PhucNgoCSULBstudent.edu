@@ -4,12 +4,68 @@
     <meta charset="UTF-8">
     <title>Desktop Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/desktop-style.css" />
+    <link rel="stylesheet" type="text/css" href="../Desktopproject/css/desktop-style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Desktop Project</h1>
-        <p>Welcome to your desktop project! Start building your content here.</p>
-    </div>
+  <header>
+    <h1>Facial Regconition and Biometric Monitoring for Desk Productivity</h1>
+  </header>
+
+  <main>
+    <section>
+        <nav>
+            <p id="top" class="logo"> PHUC NGO</p>
+            <!--Menus-->
+            <ul>
+                <li><a href="#about" class=" active">About me</a></li>
+                <li><a href="#resume">Résume</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+      <h2>Project Summary</h2>
+      <p>
+        Our project was based on building an embedded system that utilizes a microcontroller (STM32)
+        to operate an application involving LEDs, ultrasonic sensors, and a display.
+      </p>
+    </section>
+
+    <section>
+      <h2>Project Components</h2>
+      <ul>
+        <li>STM32F103C8T6 ("Blue Pill")</li>
+        <li>HC-SR04 Ultrasonic Sensor</li>
+        <li>SSD1306 OLED Display</li>
+        <li>Red & Orange LEDs</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>System Tasks</h2>
+      <ol>
+        <li>Red LED Task</li>
+        <li>Orange LED Task</li>
+        <li>Echo Task</li>
+        <li>Trigger Task</li>
+        <li>OLED Display Task</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>FreeRTOS Implementation</h2>
+      <p>
+        We used FreeRTOS to manage our system tasks with priority-based scheduling. Each component's logic was encapsulated in a task.
+        Tasks were synchronized using semaphores and delays using the vTaskDelay function.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Team 4 – Embedded Systems</p>
+  </footer>
 </body>
+
 </html>

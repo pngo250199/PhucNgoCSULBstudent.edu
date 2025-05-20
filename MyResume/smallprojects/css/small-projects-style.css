@@ -101,6 +101,66 @@ img.smallproject {
     margin: 40px auto; /* remove negative margin */
 }
 
+.space-game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+
+.space-game img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.space-game {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: white;
+    
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 40px auto; /* remove negative margin */
+}
+
+
+.real-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.real-time img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.real-time {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: white;
+    
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 40px auto; /* remove negative margin */
+}
+
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -121,3 +181,12 @@ img.smallproject {
     font-size: 1.2rem;
     color: #666;
 }
+
+.container h2 {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
