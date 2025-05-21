@@ -2,70 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Desktop Project</title>
+    <title>Small Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../Desktopproject/css/desktop-style.css" />
+    <link rel="stylesheet" href="css/small-projects-style.css">
 </head>
 <body>
-  <header>
-    <h1>Facial Regconition and Biometric Monitoring for Desk Productivity</h1>
-  </header>
-
-  <main>
-    <section>
+        <section>
         <nav>
             <p id="top" class="logo"> PHUC NGO</p>
             <!--Menus-->
             <ul>
-                <li><a href="#about" class=" active">About me</a></li>
-                <li><a href="#resume">Résume</a></li>
-                <li><a href="#Project">Project</a></li>
-                <li><a href="#contact">Contact me</a></li>
+                <li><a href="../index.html" class="active">Main Page</a></li>
+                <li><a href="../Desktopproject/desktopproject.html" class="active">Desktop Project</a></li>
+                <li><a href="../Droneproject/drone-project.html" class="active">Drone Project</a></li>
             </ul>
         </nav>
-    </section>
+        <!--Introdution-->
 
-    <section>
-      <h2>Project Summary</h2>
-      <p>
-        Our project was based on building an embedded system that utilizes a microcontroller (STM32)
-        to operate an application involving LEDs, ultrasonic sensors, and a display.
-      </p>
-    </section>
 
-    <section>
-      <h2>Project Components</h2>
-      <ul>
-        <li>STM32F103C8T6 ("Blue Pill")</li>
-        <li>HC-SR04 Ultrasonic Sensor</li>
-        <li>SSD1306 OLED Display</li>
-        <li>Red & Orange LEDs</li>
-      </ul>
     </section>
+    <div class="container">
+        <h1>Welcome to my Small Projects Page</h1>
+        <p>This is where my journey began—through hands-on exploration of concepts learned both in
+             the classroom and through self-driven passion projects. 
+             These small-scale initiatives laid the foundation for my growth in engineering and technology.</p>
+        <div class="project-list">
+            <div class="project-item">
+                <img src="linefollow.jpg" alt="Line following car image">
+                <img src="carscheme.jpg" alt="Line following car schematic">
+                <h2>Line Following Car – The Beginning of My Embedded Systems Journey</h2>
+                <p>I began with fundamental concepts of Computer Engineering, applying digital electronics to develop
+                    a basic line-following car. This project marked the starting point of my embedded systems career,
+                    providing a practical understanding of how computers operate using binary logic (TRUE/FALSE states).
+                    I implemented infrared (IR) sensors in conjunction with operational amplifiers (op-amps) to realize 
+                    basic gate logic and control the car’s navigation along a defined path.
+                    This project taught me how to design a schematic with KiCad or EasyIDE or with autoCAD</p>
+            </div>
 
-    <section>
-      <h2>System Tasks</h2>
-      <ol>
-        <li>Red LED Task</li>
-        <li>Orange LED Task</li>
-        <li>Echo Task</li>
-        <li>Trigger Task</li>
-        <li>OLED Display Task</li>
-      </ol>
-    </section>
+            <div class ="space-game">
+                <img src ="../smallprojects/space.jpg" alt ="space game">
+                <h2> Spaceship game</h2>
+                <p> During my academic studies, I developed a solid foundation in C/C++ programming.
+                    As a practical application of my skills, I designed and implemented a simple space
+                    shooter game using C++. In this project, the Nokia 5110 LCD was used to display a 
+                    simplified version of the classic Space Invaders game. A 10 Hz screen refresh rate 
+                    was achieved using the SysTick timer, demonstrating the use of periodic interrupts 
+                    for consistent display updates. The system operated on an 80 MHz clock, configured 
+                    through the Phase-Locked Loop (PLL), ensuring high-speed performance for real-time 
+                    processing. To enable user interaction, an Analog-to-Digital Converter (ADC) was 
+                    implemented to continuously sample input voltages, allowing smooth control of the 
+                    player's spaceship based on analog input signals. This project illustrates practical 
+                    applications of timers, clock systems, and ADCs in embedded system design for interactive applications.  
+                    </p>
 
-    <section>
-      <h2>FreeRTOS Implementation</h2>
-      <p>
-        We used FreeRTOS to manage our system tasks with priority-based scheduling. Each component's logic was encapsulated in a task.
-        Tasks were synchronized using semaphores and delays using the vTaskDelay function.
-      </p>
-    </section>
-  </main>
+                </p>
+            </div>
 
-  <footer>
-    <p>© 2025 Team 4 – Embedded Systems</p>
-  </footer>
+            <div class="real-time">
+                <img src="smallproject.jpg" alt="real-time ultrasound sensor">
+                <h2> Real-time distance measuring with Ultrasound sensor</h2>
+                <p>After graduating, I dedicated time to further explore the field of embedded systems. In this project,
+                    I implemented a Real-Time Operating System (RTOS) for the first time, utilizing the SEGGER SystemView
+                    tool to monitor task execution. I designed a multitasking environment integrated with I2C communication
+                    and customized the clock settings for the OLED display to enable real-time data updates from the 
+                    master microcontroller. This project allowed me to gain practical experience with both RTOS-based 
+                    task management and I2C communication protocols.</p>
+
+            </div>
+        </div>
+
+    </div>
 </body>
-
 </html>
