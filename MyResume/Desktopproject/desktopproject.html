@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Small Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/small-projects-style.css">
+    <link rel="stylesheet" href="../Desktopproject/css/desktop-style.css">
 </head>
 <body>
         <section>
@@ -22,37 +22,39 @@
 
     </section>
     <div class="container">
-        <h1>Welcome to my Small Projects Page</h1>
-        <p>This is where my journey began—through hands-on exploration of concepts learned both in
-             the classroom and through self-driven passion projects. 
-             These small-scale initiatives laid the foundation for my growth in engineering and technology.</p>
+        <h1>Welcome to my Desktop Companion Project session</h1>
+        <p>This project was my biggest research project with my team.</p>
         <div class="project-list">
             <div class="project-item">
-                <img src="linefollow.jpg" alt="Line following car image">
-                <img src="carscheme.jpg" alt="Line following car schematic">
-                <h2>Line Following Car – The Beginning of My Embedded Systems Journey</h2>
-                <p>I began with fundamental concepts of Computer Engineering, applying digital electronics to develop
-                    a basic line-following car. This project marked the starting point of my embedded systems career,
-                    providing a practical understanding of how computers operate using binary logic (TRUE/FALSE states).
-                    I implemented infrared (IR) sensors in conjunction with operational amplifiers (op-amps) to realize 
-                    basic gate logic and control the car’s navigation along a defined path.
-                    This project taught me how to design a schematic with KiCad or EasyIDE or with autoCAD</p>
+                <img src="" alt="Line following car image">
+                <img src="" alt="Line following car schematic">
+                <h2>Introduce the project</h2>
+                <p>The Desktop Companion device is a health monitoring accessory that uses biometrics
+                    to offer a more comfortable and productive desk experience. By building a device 
+                    that would compact specific add-ons into one, it will eliminate the need to buy
+                    other multiple extensions that would be too costly and take up desk space. Some
+                    features include facial recognition for seamless login and gesture controls for
+                    activating hotkey functions to optimize workflow efficiency. This project was 
+                    selected because we aim to design a compact device that will monitor the user’s health while 
+                    providing the necessary feedback to improve productivity as the user is working at their desk.
+                     We are excited to do this, because we want to develop an accessory that engages with the user
+                      while monitoring their health.</p>
             </div>
 
             <div class ="space-game">
-                <img src ="../smallprojects/space.jpg" alt ="space game">
-                <h2> Spaceship game</h2>
-                <p> During my academic studies, I developed a solid foundation in C/C++ programming.
-                    As a practical application of my skills, I designed and implemented a simple space
-                    shooter game using C++. In this project, the Nokia 5110 LCD was used to display a 
-                    simplified version of the classic Space Invaders game. A 10 Hz screen refresh rate 
-                    was achieved using the SysTick timer, demonstrating the use of periodic interrupts 
-                    for consistent display updates. The system operated on an 80 MHz clock, configured 
-                    through the Phase-Locked Loop (PLL), ensuring high-speed performance for real-time 
-                    processing. To enable user interaction, an Analog-to-Digital Converter (ADC) was 
-                    implemented to continuously sample input voltages, allowing smooth control of the 
-                    player's spaceship based on analog input signals. This project illustrates practical 
-                    applications of timers, clock systems, and ADCs in embedded system design for interactive applications.  
+                <img src ="" alt ="space game">
+                <h2> What made this project special</h2>
+                <p> The Desktop Companion is a LCD accessory for a Windows computer. It’s designed to monitor the
+                    user’s health by observing the user’s temperature and facial expressions by providing real time
+                    AI feedback based on that. The companion will also promote productivity with its widgets, activity
+                    tracker, and hand gesture control. Productivity is promoted with macros to control their desktop,
+                    real time feedback in regards to their activity level on the computer, and being able to tab between
+                    desktops with hand swipes. The companion’s widgets serve as hotkeys, or macros, so the user can open
+                    and minimize applications, control their media with media keys, and more. The companion’s activity
+                    tracker software will monitor metrics, such as daily keystrokes and clicks. This software will not 
+                    store sensitive data, such as credentials, passwords, and etc. Lastly, the companion’s hand gesture
+                    software is used to detect hand swipes, and tab between the left and right desktop based on that. 
+                    All of these features are designed to make the user have a more comfortable experience at their desk.
                     </p>
 
                 </p>
@@ -60,14 +62,52 @@
 
             <div class="real-time">
                 <img src="smallproject.jpg" alt="real-time ultrasound sensor">
-                <h2> Real-time distance measuring with Ultrasound sensor</h2>
-                <p>After graduating, I dedicated time to further explore the field of embedded systems. In this project,
-                    I implemented a Real-Time Operating System (RTOS) for the first time, utilizing the SEGGER SystemView
-                    tool to monitor task execution. I designed a multitasking environment integrated with I2C communication
-                    and customized the clock settings for the OLED display to enable real-time data updates from the 
-                    master microcontroller. This project allowed me to gain practical experience with both RTOS-based 
-                    task management and I2C communication protocols.</p>
+                <h2> Widgets</h2>
+                <p>The first features we developed is created unique widgets that completely separate with Stream-desk 
+                    from the market. Our measures of success for this demo were to be able to customize the hotkeys on
+                     the Companion, and to use the hotkeys from the Companion and have them be executed on the computer.
+                      For this to be possible, we had to set up a socket communication between both the computer and the
+                       Companion. During our live demo, we first demonstrated our media keys, showing that we were able 
+                       to control our music on the computer from the Companion. We also demonstrated the many applications
+                        that could be opened on the computer, such as slack, spotify, teams, text editors, and more. 
+                        Lastly, we demonstrated the user interface and how to customize, add, and remove hotkeys from
+                         the Companion. 
+                </p>
+            <div class="health">
+                <img src="" alt="">
+                <h2> Health Monitor feature</h2>
+                <p>After we finished the widgets, we implemented the 2nd microcontroller for the health monitoring features
+                   Our first measure of success for this demo was to be able to relay the user’s temperature and
+                    provide feedback based on their temperature. Our second measure of success for this demo was to 
+                    be able to measure the user’s activity level by measuring metrics such as daily keystrokes, daily 
+                    clicks, total keystrokes, and total clicks and provide feedback based on that. During our demo,
+                    we provided videos of the Companion measuring different temperature ranges. The Companion was
+                    able to record both average human temperature and when the user can potentially have a fever.
+                    For the average human temperature, the Companion notified the user that their temperature was good.
+                    When a high temperature range was recorded, the Companion notified the user that they could
+                    potentially have a fever. For our activity tracker, we were able to show the Companion 
+                    consistently providing real time updates as the user’s daily activity increased.
+                    Additionally, we were also to show and explain why sensitive data isn’t recorded with the
+                    software.
+                 </p>
+            </div>
 
+            <div class="gesture">
+                <img src ="" alt="">
+                <h2> Hand Gesture feature</h2>
+                <p>
+                    The last feature of this project was combination of motion captures.
+                    we demonstrated the Companion reacting to the user’s facial expressions and the Companion providing
+                    real time updates based on that. We also showed our lock feature, by having the user walk out of
+                    the camera’s frame and locking the computer after 10 seconds had elapsed. For our hand gesture
+                    control, we showed a simulation of our program capturing hand swipes and displaying whether
+                    it was a left or right hand swipe. We also showed the Companion switching between desktops 
+                    based on the hand swipe. Lastly, we were able to show an unified system by successfully 
+                    demonstrating every feature in one go. 
+
+
+                </p>
+            </div>
             </div>
         </div>
 
